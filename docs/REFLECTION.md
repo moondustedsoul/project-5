@@ -1,5 +1,5 @@
 # Reflection
-## Phase 1: Design & Pseudocode Analysis
+## Phase 1
 ### Part A: Gnome Sort Pseudocode
 This sorting algorithm compares the current element to the previous element and determines if they are in the correct order. If they are, it moves forward to the next elements; if they are not, it swaps them and moves backwards to check if the order of the previous elements has been effected.
 
@@ -14,3 +14,8 @@ This algorithm is more effective than a regular Bubble Sort since it works in bo
 This sorting algorithm compares over "gaps" instead of comparing adjacent elements. If it finds that the current element is greater than the next element, it swaps them and iterates backwards across the gaps until the next element finds its correct position. When it reaches the last index, the gaps become smaller and it repeats sorting until complete.
 
 This algorithm is much more efficient than the previous two algorithms for larger datasets, as sorting over gaps is much faster than adjacent sorting.
+
+## Phase 3
+ChatGPT-5.3 Mini's initial test implementation failed every test due to, as it later explained, a naming collision in the helper method. Upon correcting the issue using its own suggestion (removing the helper method entirely and instead usng JUnit directly), it passed all 24 tests on the first try.
+
+When I reviewed its tests, I found them to be effective in testing every edge case requested.
